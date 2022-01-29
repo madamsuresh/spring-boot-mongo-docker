@@ -13,7 +13,7 @@ node
  stage('deploy on tomcat')
  {
   sshagent(['8e25e58b-1583-4e1c-b855-17ae79b3dd9d']) {
-    sh "scp -o StrictHostKeyChecking=no target/spring-boot-mongo-docker.war ubuntu@3.6.93.80:/var/lib/tomcat9/webapps"
+    sh "scp -o StrictHostKeyChecking=no target/spring-boot-mongo-docker.war ubuntu@3.6.93.80:/var/lib/tomcat9/Webapps"
  }
  }
 }
